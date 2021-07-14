@@ -22,7 +22,7 @@ body {
   font-size: 16px;
   color: #ffffff;
   font-weight: 500;
-  transition: 0.3s;
+  transition: 1s;
 }
 
 /* ---------------------------
@@ -181,6 +181,9 @@ button {
 
 .background img {
   width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .worldcup-details {
   position: absolute;
@@ -233,6 +236,7 @@ button {
 .hour {
   text-align: center;
   margin: 0;
+  font-size: 1em;
   background-color: rgba(0, 0, 0, 0.589);
   border-radius: 10px;
   padding: 5px;
@@ -264,7 +268,7 @@ footer p {
  =============================*/
 
 /*-----------------------------
- responsive design  
+ responsive design  for mobile
  -------------------------------*/
 @media only screen and (max-width: 500px) {
   /* header  */
@@ -356,10 +360,79 @@ footer p {
     padding: 5px;
   }
   /* footer  */
+  footer {
+    text-align: center;
+    padding-bottom: 187px;
+  }
   .footer-image img {
     width: 270px;
   }
   .icon {
     font-size: 32px;
+  }
+}
+/*-----------------------------
+ responsive design  for tab
+ -------------------------------*/
+@media only screen and (min-width: 501px) and (max-width: 768px) {
+  html {
+    font-size: 75%;
+  }
+  .container {
+    width: 90%;
+  }
+  .player-container {
+    width: 98%;
+  }
+  .header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 86px;
+  }
+  .header-title {
+    width: 278px;
+    height: 138px;
+    left: 0px;
+  }
+  .header-title h2 {
+    font-size: 55px;
+    line-height: 50px;
+  }
+  .header-image img {
+    width: 329px;
+    height: 259.17px;
+    margin-top: 150px;
+  }
+  .players {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 24px;
+  }
+  .title h1 {
+    line-height: 45px;
+    text-align: center;
+    margin: 0;
+    margin-top: 30px;
+  }
+  #title {
+    font-size: 2.5em;
+  }
+  #subtitle {
+    font-size: 2em;
+    text-align: center;
+    font-weight: 200;
+  }
+  #line {
+    margin-top: 10px;
+    font-size: 16px;
+    margin-bottom: 60px;
+  }
+  .coundown {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    font-weight: 700;
+    font-size: 1em;
   }
 }
