@@ -13,6 +13,17 @@ body {
 .player-container {
   width: 1100px;
 }
+.button {
+  border: none;
+  text-decoration: none;
+  text-align: center;
+  background-color: #e02c6d;
+  padding: 10px 24px;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 500;
+  transition: 0.3s;
+}
 
 /* ---------------------------
 header section design start 
@@ -49,19 +60,9 @@ header {
 .header-image img:hover {
   transform: rotate(10deg);
 }
-.button {
-  border: none;
-  text-decoration: none;
-  text-align: center;
-  background-color: #e02c6d;
-  padding: 10px 24px;
-  font-size: 16px;
-  color: #ffffff;
-  font-weight: 500;
-  transition: 0.3s;
-}
+
 .button:hover {
-  background-image: linear-gradient(to left, #e02c6d, #e493b1);
+  background-image: linear-gradient(to left, #e02c6d, #ec4b86);
 }
 /*----------------------------
  header section design end 
@@ -115,8 +116,133 @@ main {
 /*----------------------------
   player box end 
  -----------------------------*/
+
+/*---------------------------
+  vote section start  
+  ----------------------------*/
+.vote-section {
+  background-color: rgba(0, 0, 0, 0.103);
+  margin-top: 70px;
+  padding: 15px;
+  color: black;
+  font-size: 2em;
+}
+.vote-heading {
+  text-align: center;
+  letter-spacing: 2px;
+}
+.vote-heading h2 {
+  font-weight: 700;
+}
+.vote-heading span {
+  font-weight: 200;
+}
+.vote-heading p {
+  font-size: 16px;
+}
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.form div {
+  display: grid;
+  /* justify-content: center; */
+  padding: 10px 0;
+}
+.form div p {
+  margin: 0;
+  width: 100%;
+}
+.form-box textarea,
+.formbox-input,
+button {
+  border: none;
+  outline: none;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.103);
+  border-bottom: 2px solid #ddd;
+  padding: 10px;
+  width: 50%;
+  margin: 2% 5%;
+}
+/*---------------------------
+  vote section end  
+  ----------------------------*/
+/*---------------------------------
+ world cup 
+ ----------------------------------*/
+.world-cup {
+  margin: 150px 0;
+  width: 100%;
+}
+.background {
+  position: relative;
+}
+
+.background img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.worldcup-details {
+  position: absolute;
+  top: 0;
+  color: #ffffff;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.worldcup-details .title {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+}
+.title h1 {
+  line-height: 80px;
+  text-align: center;
+  margin: 0;
+  margin-top: 30px;
+}
+#title {
+  font-size: 4em;
+}
+#subtitle {
+  font-size: 3em;
+  text-align: center;
+  margin: 0;
+}
+#line {
+  margin-top: 40px;
+}
+.coundown {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  font-weight: 700;
+  font-size: 2em;
+}
+.year,
+.month,
+.day,
+.hour {
+  text-align: center;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.589);
+  border-radius: 10px;
+}
+/*-------------------------------
+world cup section end  
+---------------------------------*/
+
+/*---------------------------
+ footer section  
+ =============================*/
+
 footer {
   text-align: center;
+  padding-bottom: 60px;
 }
 .footer-image img {
   width: 483.87px;
@@ -125,3 +251,6 @@ footer {
   padding: 0 10px;
   color: #969bab;
 }
+/*---------------------------
+ footer section  end
+ =============================*/
