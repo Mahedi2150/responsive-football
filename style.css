@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;700&display=swap");
 /*---------------------------
         utulity class 
  ----------------------------*/
@@ -146,7 +146,7 @@ main {
 }
 .form div {
   display: grid;
-  /* justify-content: center; */
+
   padding: 10px 0;
 }
 .form div p {
@@ -162,7 +162,7 @@ button {
   background-color: rgba(0, 0, 0, 0.103);
   border-bottom: 2px solid #ddd;
   padding: 10px;
-  width: 50%;
+  width: 80%;
   margin: 2% 5%;
 }
 /*---------------------------
@@ -181,8 +181,6 @@ button {
 
 .background img {
   width: 100%;
-  display: flex;
-  justify-content: center;
 }
 .worldcup-details {
   position: absolute;
@@ -211,10 +209,16 @@ button {
 #subtitle {
   font-size: 3em;
   text-align: center;
-  margin: 0;
+
+  font-weight: 200;
 }
 #line {
   margin-top: 40px;
+  margin-bottom: 10px;
+}
+.background img {
+  width: 100%;
+  height: 100%;
 }
 .coundown {
   display: grid;
@@ -231,6 +235,7 @@ button {
   margin: 0;
   background-color: rgba(0, 0, 0, 0.589);
   border-radius: 10px;
+  padding: 5px;
 }
 /*-------------------------------
 world cup section end  
@@ -251,6 +256,110 @@ footer {
   padding: 0 10px;
   color: #969bab;
 }
+footer p {
+  font-size: 18px;
+}
 /*---------------------------
  footer section  end
  =============================*/
+
+/*-----------------------------
+ responsive design  
+ -------------------------------*/
+@media only screen and (max-width: 500px) {
+  /* header  */
+  html {
+    font-size: 50%;
+  }
+  .container {
+    width: 100%;
+  }
+  .player-container {
+    width: 90%;
+  }
+  .header-section {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 47px;
+    align-items: flex-start;
+    margin-left: 16px;
+    width: 100%;
+  }
+  .header-title {
+    width: 278px;
+    height: 138px;
+    left: 0px;
+  }
+  .header-title h2 {
+    font-size: 36px;
+    line-height: 50px;
+  }
+  .header-image img {
+    width: 329px;
+    height: 259.17px;
+    margin-top: 150px;
+  }
+  /* player  */
+  .players {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 24px;
+  }
+  /* vote section  */
+  .form {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  /* world cup section  */
+  .worldcup-details {
+    color: black;
+    position: relative;
+  }
+  .background img {
+    display: none;
+  }
+  .title h1 {
+    line-height: 25px;
+    text-align: center;
+    margin: 0;
+    margin-top: 30px;
+  }
+  #title {
+    font-size: 2em;
+  }
+  #subtitle {
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: 200;
+  }
+  #line {
+    margin-top: 10px;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  .coundown {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    font-weight: 700;
+    font-size: 2em;
+  }
+  .year,
+  .month,
+  .day,
+  .hour {
+    text-align: center;
+    margin: 0;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.589);
+    border-radius: 10px;
+    padding: 5px;
+  }
+  /* footer  */
+  .footer-image img {
+    width: 270px;
+  }
+  .icon {
+    font-size: 32px;
+  }
+}
